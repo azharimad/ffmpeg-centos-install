@@ -1,8 +1,8 @@
 yum install autoconf automake cmake freetype-devel gcc gcc-c++ git libtool make mercurial nasm pkgconfig zlib-devel
 
-mkdir /usr/local/ffmpeg_build
+mkdir -p /usr/local/src/ffmpeg_build
 
-cd /usr/local/ffmpeg_build
+cd /usr/local/src/ffmpeg_build
 git clone --depth 1 git://github.com/yasm/yasm.git
 cd yasm
 autoreconf -fiv
